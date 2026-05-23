@@ -11,14 +11,17 @@ The purpose of this software is to strengthen my skills as a software engineer b
 The cloud database used in this project is **Google Firebase Firestore**, a NoSQL key/value store.  
 
 **Database Structure:**  
+- Collection: `users`  
+  - Fields: `name`, `email`  
 - Collection: `tasks`  
-- Each document contains fields such as `id`, `title`, `description`, and `status`.  
-- The program demonstrates adding new tasks, updating existing ones, deleting tasks, and querying tasks by status.  
+  - Fields: `user_id`, `title`, `description`, `status`  
+- Each task is linked to a user by `user_id`.  
+- The program demonstrates adding new users, linking tasks to users, updating tasks, deleting tasks, and querying both collections.  
 
 # Development Environment
 
 - Tools: Visual Studio Code, GitHub Desktop, Firebase Console  
-- Programming Language: Python 3.12.2 
+- Programming Language: Python 3.13.2  
 - Libraries: `firebase-admin` for Firestore integration  
 
 # Useful Websites
